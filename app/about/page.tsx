@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CertificateCarousel } from "@/components/shared/CertificateCarousel";
 import { Badge } from "@/components/ui/badge";
-import { SKILLS } from "@/constants/site-config";
+import { SKILLS, siteConfig } from "@/constants/site-config";
 import { GraduationCap, Briefcase, Award, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageTransition } from "@/components/shared/PageTransition";
@@ -12,7 +13,6 @@ export default function AboutPage() {
   return (
     <PageTransition>
       <div className="container mx-auto py-16 space-y-20">
-        {/* Hero Section */}
         <section className="relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -22,27 +22,28 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-6">
               <div className="relative h-24 w-24 rounded-full overflow-hidden bg-muted/30 backdrop-blur-sm border flex-shrink-0">
-                <img
+                <Image
                   src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Profile"
                   className="object-cover w-full h-full"
+                  fill
+                  sizes="96px"
+                  priority
                 />
               </div>
               <div>
                 <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
-                  John Doe
+                  {siteConfig.name}
                 </h1>
                 <p className="text-2xl font-semibold text-muted-foreground mt-2">
-                  Full Stack Developer
+                  {siteConfig.title}
                 </p>
               </div>
             </div>
             
             <div className="max-w-2xl">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A passionate developer with 5+ years of experience in building web applications.
-                Specialized in React, Node.js, and cloud technologies. Currently focused on
-                creating innovative solutions that make a difference.
+                {siteConfig.description}
               </p>
 
               <div className="flex flex-wrap gap-2 mt-6">
@@ -61,38 +62,29 @@ export default function AboutPage() {
           </motion.div>
         </section>
 
-        {/* Experience Section */}
         <section className="space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid gap-8 md:grid-cols-3"
+            className="flex items-stretch gap-x-6"
           >
-            <div className="p-6 rounded-lg bg-card border space-y-4">
+            <div className="p-6 rounded-lg bg-card border space-y-4 flex-1 flex flex-col items-center text-center">
               <GraduationCap className="h-8 w-8 text-primary" />
               <h3 className="text-xl font-semibold">Education</h3>
-              <p className="text-muted-foreground">Master's in Computer Science</p>
-              <p className="text-sm text-muted-foreground">Stanford University, 2020</p>
+              <p className="text-muted-foreground">S1 Information Systems (Ongoing)</p>
+              <p className="text-sm text-muted-foreground">Universitas Terbuka</p>
             </div>
 
-            <div className="p-6 rounded-lg bg-card border space-y-4">
+            <div className="p-6 rounded-lg bg-card border space-y-4 flex-1 flex flex-col items-center text-center">
               <Briefcase className="h-8 w-8 text-primary" />
               <h3 className="text-xl font-semibold">Experience</h3>
-              <p className="text-muted-foreground">Senior Developer</p>
-              <p className="text-sm text-muted-foreground">Google, 2020 - Present</p>
-            </div>
-
-            <div className="p-6 rounded-lg bg-card border space-y-4">
-              <Award className="h-8 w-8 text-primary" />
-              <h3 className="text-xl font-semibold">Awards</h3>
-              <p className="text-muted-foreground">Best Developer Award</p>
-              <p className="text-sm text-muted-foreground">Tech Conference 2023</p>
+              <p className="text-muted-foreground">IT Operator in Elementary School Institutions</p>
+              <p className="text-sm text-muted-foreground">Februay 2024 - Present</p>
             </div>
           </motion.div>
         </section>
 
-        {/* Certificates Section */}
         <section className="space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

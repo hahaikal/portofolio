@@ -1,6 +1,7 @@
 "use client";
 
 import useEmblaCarousel from 'embla-carousel-react';
+import Image from "next/image";
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, FileText } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
@@ -8,22 +9,58 @@ import { motion } from 'framer-motion';
 
 const certificates = [
   {
-    title: "AWS Certified Solutions Architect",
-    image: "https://images.pexels.com/photos/8294606/pexels-photo-8294606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    date: "2023",
-    pdfUrl: "https://example.com/path/to/aws-certificate.pdf" // Replace with actual PDF URL
+    title: "Google Developers X Dicoding",
+    description: "Fundamental Front-End Web Development",
+    image: "/Google Developers X Dicoding Fundamental FE.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/1a0b016ee66786b1d2e003f60c0f427a3e711de3/view"
   },
   {
-    title: "Google Cloud Professional Developer",
-    image: "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    date: "2023",
-    pdfUrl: "https://example.com/path/to/google-certificate.pdf" // Replace with actual PDF URL
+    title: "AWS X Dicoding",
+    description: "AWS Cloud Practitioner Essentials",
+    image: "/AWS X Dicoding Cloud Practitioner Essentials.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/542d866a6cc01a70447b54df83309405980aef12/view"
   },
   {
-    title: "Meta Frontend Developer",
-    image: "https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    date: "2022",
-    pdfUrl: "https://example.com/path/to/meta-certificate.pdf" // Replace with actual PDF URL
+    title: "Google Cloud Partner X Dicoding",
+    description: "Dasar AI",
+    image: "/Google Cloud Partner X Dicoding Dasar AI.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/f3d02bab91d3f08b42ee291ea57bc2178648af40/view"
+  },
+  {
+    title: "Google Developers X Dicoding",
+    description: "Dasar Pemrograman Web",
+    image: "/Google Developers X Dicoding Dasar Pemrograman Web.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/c776e818bb5d322a5e0b7a1d76dd78442880d35f/view"
+  },
+  {
+    title: "Google Developers X Dicoding",
+    description: "Dasar Data Science",
+    image: "/Google Developers X Dicoding Dasar Data Science.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/f27707cabdf1ea421da0ce875e119a539e919214/view"
+  },
+  {
+    title: "Google Developers X Dicoding",
+    description: "Dasar Visualisasi Data",
+    image: "/Google Developers X Dicoding Dasar Visualisasi Data.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/5020eaf8bd1c0585e31242cc2f56571ffcded7b9/view"
+  },
+  {
+    title: "Dicoding",
+    description: "Membuat Front-End Web untuk Pemula",
+    image: "/Dicoding FE untuk pemula.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/9052e9ee3d3ce3666ec23e25c5caeeb2b8471199/view"
+  },
+  {
+    title: "Dicoding",
+    description: "Dasar SQL",
+    image: "/Dicoding Dasar SQL.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/fb3cf4ad4b7804eb02da8de5defbc663690fa29d/view"
+  },
+  {
+    title: "Dicoding",
+    description: "Dasar Pemrograman JavaScript",
+    image: "/Dicoding Dasar Pemrograman JavaScript.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/22acc8dac9c12753a29f5d93d973f82383ab05b4/view"
   },
 ];
 
@@ -60,7 +97,7 @@ export function CertificateCarousel() {
         <div className="flex">
           {certificates.map((cert, index) => (
             <motion.div
-              key={cert.title}
+              key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ 
                 opacity: selectedIndex === index ? 1 : 0.5,
@@ -73,17 +110,18 @@ export function CertificateCarousel() {
                 className="aspect-[16/9] overflow-hidden rounded-lg border group cursor-pointer relative"
                 onClick={() => handleCertificateClick(cert.pdfUrl)}
               >
-                <img
+                <Image
                   src={cert.image}
                   alt={cert.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  fill
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <FileText className="w-12 h-12 text-white" />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                  <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-                  <p className="text-sm opacity-80">Achieved in {cert.date}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent text-white">
+                  <h1 className="text-xl font-semibold mb-2">{cert.title}</h1>
+                  <p className="text-sm opacity-80">{cert.description}</p>
                 </div>
               </div>
             </motion.div>

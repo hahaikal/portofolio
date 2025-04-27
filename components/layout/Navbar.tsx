@@ -20,7 +20,6 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-bold">Portfolio</span>
           </Link>
-          {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
             {NAVIGATION_ITEMS.map((item) => (
               <Link
@@ -39,7 +38,6 @@ export function Navbar() {
               <Link href="/contact">Contact</Link>
             </Button>
           </nav>
-          {/* Mobile menu button */}
           <button
             className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-foreground"
             aria-label="Toggle menu"
@@ -72,7 +70,6 @@ export function Navbar() {
           </button>
         </div>
       </Container>
-      {/* Mobile menu */}
       {mobileMenuOpen && (
         <nav className="md:hidden bg-background border-t border-border">
           <div className="flex flex-col space-y-2 p-4">

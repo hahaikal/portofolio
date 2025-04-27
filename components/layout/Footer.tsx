@@ -1,7 +1,7 @@
 "use client";
 
 import { Container } from "./Container";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram  } from "lucide-react";
 import { SOCIAL_LINKS } from "@/constants/site-config";
 
 export function Footer() {
@@ -24,7 +24,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-foreground"
               >
                 {link.icon === "github" && <Github className="h-5 w-5" />}
-                {link.icon === "twitter" && <Twitter className="h-5 w-5" />}
+                {link.icon === "instagram" && <Instagram className="h-5 w-5" />}
                 {link.icon === "linkedin" && <Linkedin className="h-5 w-5" />}
                 {link.icon === "mail" && <Mail className="h-5 w-5" />}
               </a>
