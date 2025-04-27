@@ -12,8 +12,8 @@ export function Hero() {
           Building beautiful digital experiences with passion and purpose
         </h1>
         <p className="max-w-[750px] text-lg text-muted-foreground sm:text-xl">
-          I'm a full-stack developer focused on building products that make a difference.
-          Let's bring your ideas to life.
+          I&apos;m a full-stack developer focused on building products that make a difference.
+          Let&apos;s bring your ideas to life.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Button size="lg" asChild>
