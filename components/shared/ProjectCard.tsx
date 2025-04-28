@@ -13,7 +13,6 @@ interface ProjectCardProps {
   technologies: string[];
   demoUrl?: string;
   githubUrl?: string;
-  lastUpdated: string;
   imageUrl: string;
 }
 
@@ -23,30 +22,34 @@ export function ProjectCard({
   technologies,
   demoUrl,
   githubUrl,
-  lastUpdated,
   imageUrl,
 }: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden group hover:shadow-lg transition-all duration-300">
+    <Card className="flex flex-col overflow-hidden group hover:shadow-lg transition-all duration-300 w-full h-full">
       <div className="relative h-48 overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          className="object-contain group-hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <CardHeader>
+      <CardHeader className="h-24">
         <CardTitle className="flex items-start justify-between">
-          <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
             {title}
           </span>
         </CardTitle>
-        <CardDescription>Last updated {lastUpdated}</CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-1 flex-col gap-4">
-        <p className="text-sm text-muted-foreground">{description}</p>
-        <div className="flex flex-wrap gap-2">
+      <CardContent className="flex flex-1 flex-col gap-4 h-40 ">
+        <div className="h-32">
+          {description.split('\n').map((line, index) => (
+            <p key={index} className="text-sm text-muted-foreground ">
+              {line}
+            </p>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2" >
           {technologies.map((tech) => (
             <Badge 
               key={tech} 

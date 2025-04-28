@@ -6,30 +6,25 @@ import { PageTransition } from "@/components/shared/PageTransition";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform built with Next.js and Stripe integration for payments.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Supabase"],
-    demoUrl: "https://demo-ecommerce.example.com",
-    githubUrl: "https://github.com/yourusername/ecommerce",
-    lastUpdated: "2 weeks ago",
-    imageUrl: "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "SIPAS (Sistem Informasi Pengarsipan Sekolah)",
+    description: "Fitur utama:\n 1. Ekstraksi otomatis isi surat\n 2. Role Based Access Control (RBAC)\n 3. Integrasi Whatsapp Bot dengan Ai untuk Analisa isi PDF & kirim laporan hasil AI ",
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Gemini AI"],
+    demoUrl: "https://administration-archive-app.vercel.app/",
+    githubUrl: "https://github.com/hahaikal/Administration-Archive-app",
+    imageUrl: "/SIPAS2.png",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team features.",
-    technologies: ["React", "Node.js", "PostgreSQL", "WebSocket"],
-    demoUrl: "https://tasks-demo.example.com",
-    githubUrl: "https://github.com/yourusername/task-manager",
-    lastUpdated: "1 month ago",
+    title: "Finotes (Financial Notes)",
+    description: "Finotes - A simple and powerful financial notes app to track your income and expenses with ease",
+    technologies: ["Laravel", "Tailwind CSS", "MySQL"],
+    githubUrl: "https://github.com/hahaikal/Finotes",
     imageUrl: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
-    title: "AI Image Generator",
-    description: "An AI-powered image generation tool using stable diffusion models.",
-    technologies: ["Python", "FastAPI", "React", "TensorFlow"],
-    demoUrl: "https://ai-image-gen.example.com",
-    githubUrl: "https://github.com/yourusername/ai-image-gen",
-    lastUpdated: "3 months ago",
+    title: "Web Portofolio",
+    description: "A modern and responsive personal portfolio website",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", ],
+    githubUrl: "https://github.com/hahaikal/portofolio",
     imageUrl: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
 ];
@@ -55,11 +50,11 @@ export default function ProjectsPage() {
           className="space-y-8"
         >
           <div className="flex flex-col gap-4 text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
               Projects
             </h1>
             <p className="text-xl text-muted-foreground">
-              A showcase of my recent work and side projects, built with modern technologies
+              Showcase of my recent work and side projects
             </p>
           </div>
 
@@ -71,7 +66,7 @@ export default function ProjectsPage() {
           >
             {projects.map((project, index) => (
               <motion.div
-                key={project.title}
+                key={index}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   show: { opacity: 1, y: 0 }

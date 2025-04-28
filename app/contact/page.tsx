@@ -19,9 +19,9 @@ export default function ContactPage() {
             <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
               Get in Touch
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground p-2">
               Have a question or want to work together? Fill out the form below and
-              I'll get back to you as soon as possible.
+              I&apos;ll get back to you as soon as possible.
             </p>
           </motion.div>
 

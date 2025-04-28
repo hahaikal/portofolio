@@ -27,7 +27,7 @@ export default function BlogPage() {
             transition={{ delay: 0.5 }}
             className="space-y-4 max-w-2xl"
           >
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent pb-2">
               Blog Coming Soon
             </h1>
             <p className="text-xl text-muted-foreground">
