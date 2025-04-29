@@ -23,7 +23,7 @@ export default function AboutPage() {
             <div className="flex items-center gap-6">
               <div className="relative h-24 w-24 rounded-full overflow-hidden bg-muted/30 backdrop-blur-sm border flex-shrink-0">
                 <Image
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="/Government ID - 35 - PORTRAIT.jpg"
                   alt="Profile"
                   className="object-cover w-full h-full"
                   fill

@@ -28,7 +28,7 @@ export const SOCIAL_LINKS = [
   },
   {
     icon: "linkedin",
-    href: "https://linkedin.com/in/haikal-nst-1a6797221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    href: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
   },
   {
     icon: "mail",
@@ -56,10 +56,7 @@ export const SKILLS = [
 export const siteConfig = {
   name: "Muhammad Hafiz Haikal Fadli",
   title: "Full Stack Developer",
-  description: `I’m a Fullstack Developer and an Information Systems undergraduate student.
-I love creating web applications that are not just functional, but also intuitive and impactful.
-Right now, I’m expanding my skills while balancing academic life and real-world projects.
-Always excited to learn, build, and grow!`,
+  description: `Saya Haikal, mahasiswa S1 Sistem Informasi yang sangat tertarik di bidang teknologi terutama pengembangan aplikasi web.  Fokus utama saya saat ini adalah mengembangkan keterampilan menjadi seorang Full-Stack developer, walaupun saya lebih minat di backend development, manajemen database, dan otomasi sistem dibandingkan dengan Frontend. Saya percaya, teknologi yang baik adalah teknologi yang bisa menyederhanakan hidup, dan itulah yang selalu saya usahakan di setiap proyek yang saya kerjakan.`,
   url: "https://yourportfolio.com",
   ogImage: "https://yourportfolio.com/og.jpg",
   links: {
