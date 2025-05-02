@@ -44,9 +44,6 @@ export default function BlogPage() {
             <Button size="lg" asChild>
               <Link href="/">Back to Home</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/contact">Get Notified</Link>
-            </Button>
           </motion.div>
         </div>
       </div>
