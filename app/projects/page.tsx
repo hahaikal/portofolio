@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Finotes (Financial Notes)",
     description: "Finotes - A simple and powerful financial notes app to track your income and expenses with ease",
-    technologies: ["Laravel", "Tailwind CSS", "MySQL"],
+    technologies: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
     githubUrl: "https://github.com/hahaikal/Finotes",
     imageUrl: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
@@ -25,7 +25,7 @@ const projects = [
     description: "A modern and responsive personal portfolio website",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", ],
     githubUrl: "https://github.com/hahaikal/portofolio",
-    imageUrl: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    imageUrl: "/portofolio.png",
   },
 ];
 
