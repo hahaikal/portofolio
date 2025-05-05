@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { CertificateCarousel } from "@/components/shared/CertificateCarousel";
 import { Badge } from "@/components/ui/badge";
 import { SKILLS, siteConfig } from "@/constants/site-config";
-import { GraduationCap, Briefcase, Award, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { GraduationCap, Briefcase, Eye, Github, Linkedin } from "lucide-react";
 import { PageTransition } from "@/components/shared/PageTransition";
 
 export default function AboutPage() {
@@ -54,10 +53,20 @@ export default function AboutPage() {
                 ))}
               </div>
 
-              <Button className="group mt-6">
-                <Download className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform duration-200" />
-                Download Resume
-              </Button>
+              <div className="flex flex-wrap gap-2 mt-6">
+                <a href="/SIPAS2.png" target="_blank" rel="noopener noreferrer" className="group mt-2 inline-flex justify-center items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-200">
+                  <Eye className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform duration-200" />
+                  View CV
+                </a>
+                <a href="https://www.linkedin.com/in/haikal-nst" target="_blank" rel="noopener noreferrer" className="group mt-2 inline-flex justify-center items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-200">
+                  <Linkedin className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform duration-200" />
+                  Linkedin
+                </a>
+                <a href="https://www.github.com/hahaikal" target="_blank" rel="noopener noreferrer" className="group mt-2 inline-flex justify-center items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-200">
+                  <Github className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform duration-200" />
+                  Github
+                </a>
+              </div>
             </div>
           </motion.div>
         </section>
