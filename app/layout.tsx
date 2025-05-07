@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/constants/site-config";
 import { Preloader } from "@/components/shared/Preloader";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    creator: siteConfig.links.twitter,
   },
 };
 
@@ -46,6 +46,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
