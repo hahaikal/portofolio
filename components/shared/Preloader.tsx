@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const text = "Portfolio";
+const text = "WELCOME TO MY PORTOFOLIO";
 
 export function Preloader() {
   const [isComplete, setIsComplete] = useState(false);
@@ -29,7 +29,7 @@ export function Preloader() {
         setShouldShow(false);
         body.style.overflow = "auto";
       }, 500);
-    }, 2000);
+    }, 2200);
 
     return () => {
       clearTimeout(timer);
@@ -99,19 +99,19 @@ export function Preloader() {
       className="fixed inset-0 z-50 flex items-center justify-center bg-background"
     >
       <div className="relative">
-        <motion.div
+          <motion.div
           variants={letterContainerVariants}
-          className="relative z-10 flex items-center justify-center text-4xl font-bold"
+          className="relative z-10 flex flex-wrap items-center justify-center text-4xl font-bold"
         >
-          {text.split("").map((letter, i) => (
+          {text.split(" ").map((word, i) => (
             <motion.span
               key={i}
               custom={i}
               variants={letterVariants}
-              className="inline-block"
+              className="inline-block mr-2"
               style={{ originX: 0.5, originY: 0.5 }}
             >
-              {letter}
+              {word}
             </motion.span>
           ))}
         </motion.div>
