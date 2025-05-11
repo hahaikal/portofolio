@@ -54,7 +54,7 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-wrap gap-2 mt-6">
-                <a href="/SIPAS2.png" target="_blank" rel="noopener noreferrer" className="group mt-2 inline-flex justify-center items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-200">
+                <a href="/CV FS.pdf" target="_blank" rel="noopener noreferrer" className="group mt-2 inline-flex justify-center items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors duration-200">
                   <Eye className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform duration-200" />
                   View CV
                 </a>

@@ -67,11 +67,11 @@ export function Hero() {
           {paragraph}
           <span className="animate-pulse">|</span>
         </p>
-        <div className="flex flex-col gap-4 sm:flex-row">
-          <Button size="lg" asChild>
+        <div className="flex flex-row gap-4">
+          <Button size="lg" asChild className="px-3 py-1 text-sm sm:px-6 sm:py-3 sm:text-base">
             <Link href="/projects">View My Work</Link>
           </Button>
-          <Button size="lg" variant="outline" asChild>
+          <Button size="lg" variant="outline" asChild className="px-3 py-1 text-sm sm:px-6 sm:py-3 sm:text-base">
             <Link href="/contact">Get in Touch</Link>
           </Button>
         </div>
