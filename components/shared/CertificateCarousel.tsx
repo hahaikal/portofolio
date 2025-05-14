@@ -45,6 +45,12 @@ const certificates = [
     pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/5020eaf8bd1c0585e31242cc2f56571ffcded7b9/view"
   },
   {
+    title: "Google Developers X Dicoding",
+    description: "Memulai Python",
+    image: "/Python.png",
+    pdfUrl: "https://www.dicoding.com/dicodingassets/coursecertificate/ea509c9b8397db47994923d2080d4872d76f0b23/view"
+  },
+  {
     title: "Dicoding",
     description: "Membuat Front-End Web untuk Pemula",
     image: "/Dicoding FE untuk pemula.png",
