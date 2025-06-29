@@ -11,7 +11,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 py-10 md:h-16 md:flex-row md:py-0">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
             <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-              Built with Next.js, Tailwind CSS and shadcn/ui.
+              ©2025 M.H. Haikal F. Semua Hak Cipta Dilindungi Undang-Undang.
             </p>
           </div>
           <div className="flex items-center gap-4">

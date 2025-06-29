@@ -71,8 +71,8 @@ export function Hero() {
           <Button size="lg" asChild className="px-3 py-1 text-sm sm:px-6 sm:py-3 sm:text-base">
             <Link href="/projects">View My Work</Link>
           </Button>
-          <Button size="lg" variant="outline" asChild className="px-3 py-1 text-sm sm:px-6 sm:py-3 sm:text-base">
-            <Link href="/contact">Get in Touch</Link>
+          <Button size="lg" variant="outline" asChild className="px-3 py-1 text-sm sm:px-8 sm:py-3 sm:text-base">
+            <Link href="/about">About Me</Link>
           </Button>
         </div>
       </div>
