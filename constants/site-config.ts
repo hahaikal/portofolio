@@ -51,9 +51,11 @@ export const SKILLS = [
   "Tailwind CSS",
   "MySQL",
   "mongoDB",
-  "Postman",
+  "PostgreSQL",
   "Git",
   "GitHub",
+  "Docker",
+  "postman",
   "AWS",
 ];
 
