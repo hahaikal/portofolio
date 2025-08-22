@@ -6,26 +6,73 @@ import { PageTransition } from "@/components/shared/PageTransition";
 
 const projects = [
   {
-    title: "SIPAS (Sistem Informasi Pengarsipan Sekolah)",
-    description: "Fitur utama:\n 1. Ekstraksi otomatis isi surat\n 2. Role Based Access Control (RBAC)\n 3. Integrasi Whatsapp Bot dengan Ai untuk Analisa isi PDF & kirim laporan hasil AI ",
-    technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Gemini AI"],
+    title: "SIPAS (MVP)",
+    description: "SIPAS adalah platform Software as a Service (SaaS) yang dirancang untuk menjadi solusi operasional digital terpadu bagi sekolah. Aplikasi ini digunakan untuk operasional tempat sekolah tempat saya bekerja dan nantinya akan ditawarkan ke sekolah-sekolah lain sebagai produk SaaS.",
+    technologies: ["React.js", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Bot WA (Gemini AI)"],
     demoUrl: "https://administration-archive-app.vercel.app/",
     githubUrl: "https://github.com/hahaikal/Administration-Archive-app",
-    imageUrl: "/SIPAS2.png",
+    imageUrls: ["/SIPAS2.png"],
+  },
+  {
+    title: "SIPAS (Full Version)",
+    description: "Ini adalah versi lengkap dari MVP SIPAS yang mencakup berbagai fitur seperti pengarsipan surat masuk dan keluar, pengelolaan arsip digital, manajemen inventaris, Pembuatan Surat Otomatis, disposisi, Landing page yang menjual, blog berita, E-Raport, E-Learning, dan masih banyak lagi.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB", "Redis", "Cloudinary ", "Backblaze B2", "Bot WA (Gemini AI)"],
+    githubUrl: "https://github.com/hahaikal/sipas",
+    imageUrls: ["/SIPAS.png"],
+  },
+  {
+    title: "Sistem Informasi Klinik",
+    description: "Aplikasi Sistem Informasi Klinik ini dirancang untuk mengelola operasional harian klinik secara efisien dan terstruktur. Dibangun sebagai tugas kompetensi, aplikasi ini mengimplementasikan fitur inti yang esensial dengan fokus pada alur sistem dan logika pemrograman yang rapi",
+    technologies: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
+    githubUrl: "https://github.com/hahaikal/clinic-app",
+    imageUrls: [
+      "/c1.png",
+      "/c2.png",
+      "/c3.png",
+      "/c4.png",
+      "/c5.png",
+    ],
+  },
+  {
+    title: "Football Prediction App",
+    description: "P-APP adalah platform perangkat lunak inovatif yang dirancang untuk memberikan prediksi hasil pertandingan sepak bola berdasarkan analisis data real-time menggunakan Model Machine Learning. Dibangun berdasarkan Hipotesis saya bahwa perubahan signifikan pada odds menjelang pertandingan dimulai merupakan sinyal kuat yang merefleksikan sentimen dan informasi kolektif dari pasar",
+    technologies: ["Python", "FastAPI", "NextJs", "TypeScript", "PostgreSQL", "Celery", "pandas", "Scikit-learn"],
+    githubUrl: "https://github.com/hahaikal/BE-P-APP",
+    imageUrls: [
+      "/app1.png",
+      "/app2.png",
+      "/app3.png"
+    ],
+  },
+  {
+    title: "Profile Company",
+    description: "Ini adalah web dimana saya menawarkan aplikasi-aplikasi yang ada sebelumnya untuk ditawarkan ke orang, institusi atau organisasi yang berminat dengan solusi yang saya tawarkan. semua aplikasi saya, saya tawarkan dalam bentuk Software as a Service (SaaS)",
+    technologies: ["TypeScript", "NextJs", "Tailwind CSS", "shadcn UI"],
+    githubUrl: "https://github.com/hahaikal/Profile-LingkupIT",
+    imageUrls: [
+      "/l1.png",
+      "/l2.png",
+      "/l3.png",
+      "/l4.png",
+      "/l5.png",
+    ],
   },
   {
     title: "Finotes (Financial Notes)",
-    description: "Finotes - A simple and powerful financial notes app to track your income and expenses with ease",
+    description: "Finotes adalah aplikasi catatan keuangan yang awalnya dirancang untuk membantu saya mengelola, melacak, serta membuat laporan keuangan saya sendiri. Saya membuat aplikasi ini karena tidak puas dengan aplikasi yang ada di pasaran.",
     technologies: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
     githubUrl: "https://github.com/hahaikal/Finotes",
-    imageUrl: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    imageUrls: [
+      "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    ],
   },
   {
     title: "Web Portofolio",
     description: "A modern and responsive personal portfolio website",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", ],
     githubUrl: "https://github.com/hahaikal/portofolio",
-    imageUrl: "/portofolio.png",
+    imageUrls: ["/portofolio.png"],
   },
 ];
 
