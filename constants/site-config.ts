@@ -62,7 +62,7 @@ export const SKILLS = [
 export const siteConfig = {
   name: "Muhammad Hafiz Haikal Fadli",
   title: "Full Stack Developer",
-  description: `Saya Haikal, mahasiswa S1 Sistem Informasi yang sangat tertarik di bidang teknologi terutama pengembangan aplikasi web.  Fokus utama saya saat ini adalah mengembangkan keterampilan menjadi seorang Full-Stack developer, walaupun saya lebih minat di backend development, manajemen database, dan otomasi sistem dibandingkan dengan Frontend. Saya percaya, teknologi yang baik adalah teknologi yang bisa menyederhanakan hidup, dan itulah yang selalu saya usahakan di setiap proyek yang saya kerjakan.`,
+  description: `Saya adalah seorang Full-Stack Developer yang berorientasi pada hasil dengan pengalaman selama dua tahun dalam membangun dan memelihara aplikasi web yang responsif dan efisien. Dengan keahlian yang merata dalam teknologi front-end dan back-end, saya termotivasi untuk menciptakan solusi digital yang inovatif dan fungsional. Saya terbiasa bekerja secara kolaboratif dalam tim yang dinamis dan memiliki komitmen kuat untuk menyelesaikan setiap proyek dengan standar kualitas tertinggi.`,
   url: "https://yourportfolio.com",
   ogImage: "https://yourportfolio.com/og.jpg",
   links: {
